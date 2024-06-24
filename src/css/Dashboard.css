@@ -1,0 +1,49 @@
+
+
+.report-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 31px;
+    padding: 20px;
+    background-color: #fee1e8;
+    transition: var(--tran-05);
+    margin-bottom: 1rem;
+  }
+  
+  .report-icon {
+    font-size: 30px;
+    color: var(--text-color);
+  }
+  
+  .report-text {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .report-number {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  @media (max-width: 576px) {
+    .report-card {
+      padding: 15px;
+    }
+  
+    .report-icon {
+      font-size: 24px;
+    }
+  
+    .report-text {
+      font-size: 14px;
+    }
+  
+    .report-number {
+      font-size: 24px;
+    }
+  }

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>Sinch Calling SDK - In-App voice calling demo</title>
+  <link rel="icon" type="image/png" href="../common/style/favicon-32x32.png" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="../common/style/sample.css" />
+  <!-- <link rel="stylesheet" href="../common/sinch-min.js" /> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.sinch.com/latest/sinch-rtc-min.js"></script>
+  <!-- start:js -->
+  <!-- end:js -->
+</head>
+
+<body>
+  <div class="sinchheader">
+    <div class="container" style="display: inline-flex;    width: 100%;    margin-left: 29px;">
+      <a href="#home" class="navbar-brand"
+        style="color: white;padding-left: 22px;padding-right: 22px;font-size: 29px;font-weight: 600;">
+        Astrology
+      </a>
+
+      <div class="navbar-collapse collapse" id="basic-navbar-nav" style="display: flex;width: 100%;">
+        <div class="me-auto navbar-nav" style="width: 100%;">
+          <a role="button" class="nav-link" tabindex="0" href="#"
+            style="color: white;padding-left: 22px;padding-right: 22px;">Chat with Astrologer</a>
+          <a role="button" class="nav-link" tabindex="0" href="#"
+            style="color: white;padding-left: 22px;padding-right: 22px;">Call with Astrologer</a>
+        </div>
+        <div class="navbar-nav">
+          <div class="nav-item dropdown">
+            <a id="basic-nav-dropdown" aria-expanded="false" role="button" class="dropdown-toggle nav-link" tabindex="0"
+              href="#">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/510px-Default_pfp.svg.png?20220226140232"
+                alt="" style="height: 3rem; width: 3rem; margin-left: 150%;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sinchbody">
+    <form>
+      <div class="input-box">
+        <fieldset id="callcontrol" class="callcontrol">
+
+          <div class="input-field">
+            <input placeholder="Enter callee" type="hidden" id="callee" name="callee" />
+            <div style="display: flex;justify-content: center;">
+              <div style="border: 2px solid #0000001a;border-radius: 11px;">
+                <img class="card-img-top" src="http://localhost:3000/static/media/usericon.5d5b6a5dd26ee02be71a.jpg"
+                  alt="usericon" style="width: 300px;height: 300px;border-radius: 11px;">
+              </div>
+
+            </div>
+          </div>
+          <div><b id="userName"></b></div>
+          <button class="btn-small" type="button" disabled id="call">
+            Call
+          </button>
+          <button class="btn-small" type="button" disabled id="hangup">
+            Hangup
+          </button>
+          <button class="btn-small" type="button" disabled id="answer">
+            Answer
+          </button>
+        </fieldset>
+      </div>
+    </form>
+  </div>
+  <!-- <footer class="footer">
+      <div id="version"></div>
+      <span>&copy; Powered by Sinch-RTC 2021</span>
+    </footer> -->
+  <script type="module" src="index.js"></script>
+  <script type="text/javascript">
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let fn = sessionStorage.getItem('fn');
+      console.log("fn", fn);
+
+      if (fn) {
+        fn = fn.toUpperCase();
+        console.log("fn", fn);
+        document.getElementById('userName').innerHTML = fn;
+      } else {
+        console.error('fn is null');
+      }
+
+      // Initialize collapsible elements
+      const elems = document.querySelectorAll(".collapsible");
+      const instances = M.Collapsible.init(elems, {});
+    });
+
+  </script>
+</body>
+
+</html>

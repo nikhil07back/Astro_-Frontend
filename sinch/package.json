@@ -1,0 +1,14 @@
+{
+  "name": "rtc-js-sdk-reference-app",
+  "version": "1.0.0",
+  "description": "Reference app for RTC JS SDK",
+  "author": "Sinch",
+  "license": "ISC",
+  "scripts": {
+    "start": "cd samples && npx http-server"
+
+  },
+  "dependencies": {
+    "acorn": "^8.11.3"
+  }
+}

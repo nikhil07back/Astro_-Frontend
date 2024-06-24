@@ -1,0 +1,105 @@
+.xo {
+    height: 78vh;
+}
+
+.firstPerson {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.editImage {
+    position: absolute;
+    top: 31px;
+    right: 1.4rem;
+}
+
+.searchicon {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+.searchField {
+    border-radius: 2rem;
+    border: none;
+    padding: 10px 45px;
+    width: 100%;
+    outline: none;
+}
+
+.unreadMsg {
+    position: absolute;
+    right: 1rem;
+    padding: 1px 6px;
+    color: #fff;
+    border-radius: 1rem;
+    top: 1.9rem;
+}
+
+.profileIcon {
+    text-align: center;
+    border-radius: 2rem;
+    background: #ccccff;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #4d4dff;
+    font-size: 1.15rem;
+}
+
+.txt {
+    text-align: center;
+}
+
+.attachment {
+    margin: .2rem;
+    background-color: #ccccff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 10vw;
+    font-size: .8rem;
+    border-radius: .5rem;
+    color: #4d4dff;
+}
+
+.viewall {
+    text-align: center;
+    color: #4d4dff;
+    font-size: .9rem;
+    font-size: .8rem;
+}
+
+.imgcontainer {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #dddddd;
+}
+
+/* #f0f0f0 */
+.chatimg {
+    margin: .7rem 0 0 .5rem;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: #dddddd;
+    position: absolute;
+}
+
+.headerimgc {
+    height: 50px;
+    background: #dddddd;
+    border-radius: 50%;
+}
+.chatList:hover{
+    background: #e6e6e6;
+    cursor: pointer;
+}

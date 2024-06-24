@@ -1,0 +1,42 @@
+.xo {
+    height: 87vh;
+}
+
+.firstPerson {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.editImage {
+    position: absolute;
+    top: 19px;
+    right: 1.4rem;
+}
+
+.searchicon {
+    position: absolute;
+    top: 9px;
+    left: 45px;
+}
+
+.searchField {
+    border-radius: 1rem;
+    border: none;
+    padding: 5px 30px;
+}
+
+.unreadMsg {
+    position: absolute;
+    right: 1rem;
+    /* background: royalblue; */
+    padding: 1px 5px;
+    color: #fff;
+    border-radius: 1rem;
+    top: 1.9rem;
+}
+h1{
+    color: red;
+}
